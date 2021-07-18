@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_g1_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_g1_example1"
+            android:icon="@drawable/ic_example2"
+            android:title="example1"/>
+        <item
+            android:id="@+id/nav_g1_example2"
+            android:icon="@drawable/ic_example3"
+            android:title="example2"/>
+        <item
+            android:id="@+id/nav_g1_example3"
+            android:icon="@drawable/ic_example4"
+            android:title="example3"/>
+    </group>
+
+
+        <item android:title="Profile">
+            <menu>
+                <group android:checkableBehavior="single">
+
+
+                <item
+                    android:id="@+id/nav_g2_profile"
+                    android:icon="@drawable/ic_profile"
+                    android:title="Profile"/>
+                <item
+                    android:id="@+id/nav_g2_login"
+                    android:icon="@drawable/ic_baseline_login"
+                    android:title="Login"/>
+                <item
+                    android:id="@+id/nav_g2_logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Logout"/>
+
+                </group>
+            </menu>
+        </item>
+
+
+    <item android:title="ExampleGroup">
+        <menu>
+            <item android:id="@+id/nav_g3_share"
+                android:title="Share"
+                android:icon="@drawable/ic_baseline_share_24"/>
+            <item android:id="@+id/nav_g3_example1"
+                android:title="Example"
+                android:icon="@drawable/ic_star"/>
+        </menu>
+    </item>
+</menu>
