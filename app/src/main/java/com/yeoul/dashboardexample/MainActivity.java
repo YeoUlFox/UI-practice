@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         /* ----- Hooks ----- */
         drawerLayout = findViewById(R.id.drawerlayout_main);
         navigationView = findViewById(R.id.nav_view);
-        toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.main_toolbar);
 
         /* ----- Toolbar ----- */
         setSupportActionBar(toolbar);

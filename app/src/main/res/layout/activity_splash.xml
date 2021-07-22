@@ -8,7 +8,7 @@
     tools:context=".activity_splash">
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/splash_imageView9"
         android:layout_width="220dp"
         android:layout_height="220dp"
         android:layout_marginStart="10dp"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/ic_example1" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/splash_textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -31,10 +31,10 @@
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        app:layout_constraintTop_toBottomOf="@+id/splash_imageView9" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/splash_textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -45,5 +45,5 @@
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/splash_textView11" />
 </androidx.constraintlayout.widget.ConstraintLayout>

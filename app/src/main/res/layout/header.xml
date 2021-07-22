@@ -10,13 +10,13 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/header_imageView"
         android:layout_width="75dp"
         android:layout_height="75dp"
         app:srcCompat="@drawable/ic_example1" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/header_textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/amaranth"
@@ -24,7 +24,7 @@
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/header_textView10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/amiko"
