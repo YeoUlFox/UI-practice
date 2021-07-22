@@ -1,17 +1,24 @@
 package com.yeoul.dashboardexample;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Pair;
+import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class activity_splash extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
 
     private static int SPLASH_SCREEN = 3000;
 
@@ -41,9 +48,17 @@ public class activity_splash extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(activity_splash.this, MainActivity.class);
-                startActivity(intent);
-                finish();
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(SplashActivity.this, imageView, imageView.getTransitionName());
+                    startActivity(intent, options.toBundle());
+                    //finishAfterTransition();
+                }
+                else {
+                    startActivity(intent);
+                    finish();
+                }
             }
         }, SPLASH_SCREEN);
     }

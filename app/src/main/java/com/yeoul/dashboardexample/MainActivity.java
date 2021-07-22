@@ -65,11 +65,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         switch (item.getItemId()) {
             case R.id.nav_g1_home:
+
             case R.id.nav_g1_example2:
             case R.id.nav_g1_example1:
             case R.id.nav_g1_example3:
             case R.id.nav_g2_profile:
+
             case R.id.nav_g2_login:
+
+
             case R.id.nav_g2_logout:
                 toast_not_implemented();
                 break;

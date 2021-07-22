@@ -14,7 +14,8 @@
         android:layout_height="match_parent"
         android:id="@+id/nav_view"
         app:headerLayout="@layout/header"
-        app:menu="@menu/main_menu">
+        app:menu="@menu/main_menu"
+        android:layout_gravity="start">
 
     </com.google.android.material.navigation.NavigationView>
 
@@ -27,7 +28,7 @@
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/main_toolbar"
-                android:layout_width="409dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="#00FFFFFF"
                 android:minHeight="?attr/actionBarSize"
@@ -46,9 +47,9 @@
                 android:fontFamily="monospace"
                 android:text="Example"
                 android:textSize="30sp"
-                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/main_imageView2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+                app:layout_constraintTop_toBottomOf="@+id/main_toolbar" />
 
             <TextView
                 android:id="@+id/main_textView2"
@@ -58,9 +59,9 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="monospace"
                 android:text="ExampleExample"
-                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/main_imageView2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintTop_toBottomOf="@+id/main_textView" />
 
             <ImageView
                 android:id="@+id/main_imageView2"
@@ -80,6 +81,7 @@
                 android:layout_marginTop="19dp"
                 android:orientation="horizontal"
                 android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/main_linearLayout3"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -154,13 +156,16 @@
 
             <LinearLayout
                 android:id="@+id/main_linearLayout3"
-                android:layout_width="411dp"
+                android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:orientation="horizontal"
                 android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/main_linearLayout2">
+
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
@@ -230,10 +235,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="411dp"
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:orientation="horizontal"
                 android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
