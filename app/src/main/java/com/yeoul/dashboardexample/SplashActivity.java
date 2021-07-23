@@ -53,11 +53,9 @@ public class SplashActivity extends AppCompatActivity {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(SplashActivity.this, imageView, imageView.getTransitionName());
                     startActivity(intent, options.toBundle());
-                    //finishAfterTransition();
                 }
                 else {
                     startActivity(intent);
-                    finish();
                 }
             }
         }, SPLASH_SCREEN);
